@@ -1,0 +1,55 @@
+.dropdown {
+  position: relative;
+  user-select: none;
+  width: 400px;
+  margin: 100px auto;
+}
+
+.dropdown .dropdown-btn {
+  padding:15px 20px;
+  background:#eeeeee;
+  box-shadow:3px 3px 10px 6px rgba(0,0,0,0.1);
+  font-weight:bold;
+  color:#333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown .dropdown-content {
+  position: absolute;
+  top:110%;
+  left:0;
+  padding:10px;
+  background: #eeeeee;
+  box-shadow:3px 3px 10px 6px rgba(0,0,0,0.1);
+  font-weight:bold;
+  color:#333333;
+  width: 100%;
+}
+
+.dropdown .dropdown-content .dropdown-item {
+padding: 10px;
+cursor: pointer;
+transition:all 200ms;
+}
+
+.dropdown .dropdown-content .dropdown-item {
+  background:#f4f4f4;
+}
+
+/* apply this classes for any transition you want */
+.dropdown-active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition:300ms ease;
+}
+
+.dropdown-inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition:300ms ease;
+}
